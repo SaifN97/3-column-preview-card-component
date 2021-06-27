@@ -9,4 +9,111 @@
 html {
   font-size: 67.5%;
 }
+
+body {
+  background: #f2f2f2;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 75%;
+  margin: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  padding: 3rem 5.5rem 3rem 3rem;
+}
+
+.cards .card .card-heading {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: #f2f2f2;
+}
+
+.cards .card .card-info {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.cards .card button {
+  background: #f2f2f2;
+  padding: 1.5rem 3rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.cards .sedan,
+.cards .btn-1 {
+  background: #e38826;
+  color: #e38826;
+}
+
+.cards .suvs,
+.cards .btn-2 {
+  background: #006970;
+  color: #006970;
+}
+
+.cards .luxury,
+.cards .btn-3 {
+  background: #004241;
+  color: #004241;
+}
 /*# sourceMappingURL=styles.css.map */

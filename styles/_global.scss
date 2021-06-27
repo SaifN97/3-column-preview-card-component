@@ -9,3 +9,12 @@
 html {
   font-size: 67.5%;
 }
+
+body {
+  background: $very-light-gray;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
