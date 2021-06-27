@@ -1,7 +1,6 @@
 main {
   height: 90vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -13,8 +12,6 @@ main {
   width: 70%;
   height: 75%;
   margin: auto;
-  border-radius: 1rem;
-  overflow: hidden;
 
   .card {
     display: flex;
@@ -30,7 +27,8 @@ main {
       color: $very-light-gray;
     }
     .card-info {
-      font-size: 1.8rem;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 1.6rem;
       margin-bottom: 5rem;
       color: $paragraphs;
     }
@@ -38,22 +36,41 @@ main {
       background: $very-light-gray;
       padding: 1.5rem 3rem;
       border-radius: 2rem;
-      border: none;
+      border: 2px solid $very-light-gray;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
     }
   }
-  .sedan,
-  .btn-1 {
+  .sedan {
     background: $bright-orange;
-    color: $bright-orange;
+    .btn-1 {
+      color: $bright-orange;
+      &:hover {
+        color: $very-light-gray;
+        background: $bright-orange;
+      }
+    }
+    border-radius: 1rem 0 0 1rem;
   }
-  .suvs,
-  .btn-2 {
+  .suvs {
     background: $dark-cyan;
-    color: $dark-cyan;
+    .btn-2 {
+      color: $dark-cyan;
+      &:hover {
+        color: $very-light-gray;
+        background: $dark-cyan;
+      }
+    }
   }
-  .luxury,
-  .btn-3 {
+  .luxury {
     background: $very-dark-cyan;
-    color: $very-dark-cyan;
+    .btn-3 {
+      color: $very-dark-cyan;
+      &:hover {
+        color: $very-light-gray;
+        background: $very-dark-cyan;
+      }
+    }
+    border-radius: 0 1rem 1rem 0;
   }
 }

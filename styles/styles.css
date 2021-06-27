@@ -33,10 +33,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -58,8 +54,6 @@ main {
   width: 70%;
   height: 75%;
   margin: auto;
-  border-radius: 1rem;
-  overflow: hidden;
 }
 
 .cards .card {
@@ -87,7 +81,8 @@ main {
 }
 
 .cards .card .card-info {
-  font-size: 1.8rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.6rem;
   margin-bottom: 5rem;
   color: rgba(255, 255, 255, 0.75);
 }
@@ -96,24 +91,94 @@ main {
   background: #f2f2f2;
   padding: 1.5rem 3rem;
   border-radius: 2rem;
-  border: none;
+  border: 2px solid #f2f2f2;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.cards .sedan,
-.cards .btn-1 {
+.cards .sedan {
   background: #e38826;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.cards .sedan .btn-1 {
   color: #e38826;
 }
 
-.cards .suvs,
-.cards .btn-2 {
+.cards .sedan .btn-1:hover {
+  color: #f2f2f2;
+  background: #e38826;
+}
+
+.cards .suvs {
   background: #006970;
+}
+
+.cards .suvs .btn-2 {
   color: #006970;
 }
 
-.cards .luxury,
-.cards .btn-3 {
+.cards .suvs .btn-2:hover {
+  color: #f2f2f2;
+  background: #006970;
+}
+
+.cards .luxury {
   background: #004241;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.cards .luxury .btn-3 {
   color: #004241;
+}
+
+.cards .luxury .btn-3:hover {
+  color: #f2f2f2;
+  background: #004241;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+  .cards {
+    width: 50%;
+    max-height: 35%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  .cards .sedan {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .cards .luxury {
+    border-radius: 0 0 1rem 1rem;
+  }
+  .cards .card {
+    padding: 10rem 3rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .cards .card .logo {
+    margin-top: 1rem;
+  }
+  .cards .card .card-heading {
+    font-size: 3.5rem;
+    margin: 2rem 0;
+  }
+  .cards .card .card-info {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .cards .card button {
+    padding: 1rem 1.5rem;
+  }
+  .attribution {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

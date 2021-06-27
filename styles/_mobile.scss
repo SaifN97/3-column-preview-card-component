@@ -1,0 +1,42 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+
+  .cards {
+    width: 50%;
+    max-height: 35%;
+    flex-direction: column;
+    margin: auto;
+
+    .sedan {
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    .luxury {
+      border-radius: 0 0 1rem 1rem;
+    }
+    .card {
+      padding: 10rem 3rem;
+      justify-content: space-evenly;
+      .logo {
+        margin-top: 1rem;
+      }
+      .card-heading {
+        font-size: 3.5rem;
+        margin: 2rem 0;
+      }
+      .card-info {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      button {
+        padding: 1rem 1.5rem;
+      }
+    }
+  }
+
+  .attribution {
+    display: none;
+  }
+}
